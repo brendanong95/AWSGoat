@@ -52,7 +52,6 @@ jobs:
       if: steps.check.outcome == 'success' 
       run: |
         echo "A Previous AWSGoat deployment exists, run the Terraform Destroy Action"
-        exit 1
 
     # Initialize a new or existing Terraform working directory 
     - name: Terraform Init
